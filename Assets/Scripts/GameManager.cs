@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
             InputProvider = Instantiate(vrInputManagerPrefab, transform);
         }
 
+        InputProvider.TryInitialize();
     }
 
     public void GoToJoystickScene()
